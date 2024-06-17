@@ -5,6 +5,10 @@
     <title>List of vets</title>
 </head>
 <body>
-
+<h1>Vets list</h1>
+<div th:each="vet : ${vets}">
+    <span th:text="${vet.firstName}"></span>
+    <span th:text="${vet.lastName}"></span>
+</div>
 </body>
 </html>
