@@ -24,21 +24,18 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Owner owner = new Owner();
-        owner.setId(1L);
         owner.setFirstName("John");
         owner.setLastName("Doh");
 
         ownerServiceMap.save(owner);
 
         Vet vet = new Vet();
-        vet.setId(1L);
         vet.setFirstName("Paul");
         vet.setLastName("Smith");
 
         vetServiceMap.save(vet);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFirstName("Fred");
         vet2.setLastName("Potter");
 
