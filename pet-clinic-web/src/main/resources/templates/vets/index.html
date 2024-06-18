@@ -5,6 +5,8 @@
     <title>List of vets</title>
 </head>
 <body>
+<!--/*@thymesVar id="vet" type="com.example.petclinic.model.Vet"*/-->
+
 <h1>Vets list</h1>
 <div th:each="vet : ${vets}">
     <span th:text="${vet.firstName}"></span>
